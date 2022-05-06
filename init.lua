@@ -44,7 +44,7 @@ function M.toggle(x, m)
 
 		s, e, p = line:find(short)
 		if p then
-			r = add_date(p:gsub(M.sym, x), '@' .. m .. ' ', 80)
+			r = add_date(p:gsub(M.sym, x), ' @' .. m .. ' ', 80)
 			goto replace
 		end
 		goto done
